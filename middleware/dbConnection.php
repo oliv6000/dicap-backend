@@ -1,9 +1,13 @@
 <?php
+require '../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
+$dotenv->load();
+
 function establish_db_connection() {
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "dicap";
+    $servername = $_ENV["DB_HOST"];
+    $username = $_ENV["DB_USERNAME"];
+    $password = $_ENV["DB_PASSWORD"];
+    $dbname = $_ENV["DB_NAME"];
 
     // Create connection
     $mysqli = new mysqli($servername, $username, $password, $dbname);
