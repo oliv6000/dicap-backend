@@ -19,11 +19,9 @@
                     <h4>Login</h4>
             </div>
             <div>
-                <label for="uname"></label>
                 <input type="text" name="uname" id="uname" placeholder="Email"></input>
             </div>
             <div>
-                <label for="pwrd"></label>
                 <input type="password" name="pwrd" id="pwrd" placeholder="password"></input>
             </div>
             <div class="forgot-container">

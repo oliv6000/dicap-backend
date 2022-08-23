@@ -14,15 +14,15 @@
 </head>
 <body>
     <div class="login-container">
-            <form action="../middleware/forgotpassword.php" method="post">
-                <div>
-                    <h4>Forgot password</h4>
+            <form action="../middleware/renewPassword.php" method="post">
+            <div>
+                <h4>Renew your password</h4>
             </div>
             <div>
-                <input type="text" name="contact" id="contact" placeholder="Email"></input>
+                <input type="password" name="newPwrd" id="newPwrd" placeholder="New password"></input>
             </div>
             <div>
-                <input type="submit" value="send link"/>
+                <input type="submit" value="Renew password"/>
             </div>
         </form>
     </div>

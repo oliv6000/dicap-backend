@@ -1,4 +1,4 @@
 <?php
-echo $authentication_code;
+echo $authCode;
 
 ?>
