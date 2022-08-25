@@ -14,28 +14,21 @@
 </head>
 <body>
     <div class="login-container">
-            <form action="../middleware/loginAuth.php" method="post">
+            <form action="../middleware/createNewUser.php" method="post">
                 <div>
-                    <h4>Login</h4>
+                    <h4>Create new user</h4>
             </div>
             <div>
-                <input type="text" name="uname" id="uname" placeholder="Email"></input>
+                <input type="text" name="name" id="name" placeholder="Name"></input>
             </div>
             <div>
-                <input type="password" name="pwrd" id="pwrd" placeholder="password"></input>
-            </div>
-            <div class="forgot-container">
-                <a href="forgotPassword.php" class="forgot-link">forgot password</a>
+                <input type="text" name="email" id="email" placeholder="Email"></input>
             </div>
             <div>
-                <input type="submit" value="login"/>
-            </div>
-            <div class="forgot-container">
-                <a href="createNewUser.php" class="forgot-link">Create new user</a>
+                <input type="submit" value="Create user"/>
             </div>
         </form>
     </div>
     
 </body>
 </html>
-<script src="../scripts/login.js"></script>
